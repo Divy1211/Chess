@@ -1,5 +1,5 @@
 //Created by Divy Chandra
-package GUI;
+package GUI.Chess;
 import javax.swing.*;
 import javax.swing.plaf.FontUIResource;
 import java.awt.*;
