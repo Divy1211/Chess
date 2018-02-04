@@ -1,4 +1,3 @@
-//Created by Divy Chandra
 package GUI.Chess;
 import javax.swing.*;
 import javax.swing.plaf.FontUIResource;
