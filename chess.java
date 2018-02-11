@@ -973,6 +973,7 @@ public class chess {
 				y-=100;
 			}
 			b[c].addActionListener(al);
+			b[c].setBorderPainted(false);
 			p.add(b[c++]);
 		}
 		f.add(p);
