@@ -91,6 +91,8 @@ public class chess {
 			co++;
 		}
 		co = kings;
+	    UIManager.put("OptionPane.messageFont", new FontUIResource(new Font("Arial", Font.PLAIN, 20)));
+	    UIManager.put("OptionPane.buttonFont", new FontUIResource(new Font("Arial",Font.PLAIN,20)));
 		if(check2 > 0) {
 			if(undercheck) {
 				b[co].setText(a);
@@ -1060,7 +1062,7 @@ public class chess {
 							while(p < 0) {
 							    String[] o = new String[] {"m", "l", "k", "j"};
 							    UIManager.put("OptionPane.messageFont", new FontUIResource(new Font("Arial", Font.PLAIN, 40)));
-							    UIManager.put("OptionPane.buttonFont", new FontUIResource(new Font("Chess Alpha 2",Font.PLAIN,40))); 
+							    UIManager.put("OptionPane.buttonFont", new FontUIResource(new Font("Chess Alpha 2",Font.PLAIN,40)));
 							    p = JOptionPane.showOptionDialog(null, "Promote Pawn ?", "Pawn Promotion",JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,null, o, o[0]);
 							    if(p == 0)
 							    	m = "m";
@@ -1113,6 +1115,8 @@ public class chess {
 						ca = 1;
 						checkforcheck(invertCase(m));
 						if(undercheck) {
+						    UIManager.put("OptionPane.messageFont", new FontUIResource(new Font("Arial", Font.PLAIN, 20)));
+						    UIManager.put("OptionPane.buttonFont", new FontUIResource(new Font("Arial",Font.PLAIN,20)));
 							JOptionPane.showMessageDialog(null, "That Puts Your Own King Under Check!","CHECK!",JOptionPane.WARNING_MESSAGE);
 							b[r].setText(m);
 							b[c].setText("");
